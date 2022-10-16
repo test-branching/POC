@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
-          owner: test-branching
           token: ${{ secrets.TOKEN }}
           base: main
           head: main
           auto_merge: false
           retries: 1
           retry_after: 5
+          auto_approve: false
