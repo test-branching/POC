@@ -30,12 +30,12 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
       with:
-        target_sync_branch: main
+        target_sync_branch: upstream
         # REQUIRED 'target_repo_token' exactly like this!
-        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+        target_repo_token: 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
         upstream_sync_branch: main
         upstream_sync_repo: test-branching/POC
-        upstream_repo_access_token: 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
+        upstream_repo_access_token: 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
 
         # Set test_mode true to run tests instead of the true action!!
         test_mode: true
