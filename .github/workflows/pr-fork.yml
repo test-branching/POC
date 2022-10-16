@@ -2,7 +2,7 @@ name: Pull Request Fork
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # every 30 minutes
+    - cron: '*/60 * * * *' # every 30 minutes
   workflow_dispatch: # on button click
 
 jobs:
@@ -14,6 +14,7 @@ jobs:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
           token: ${{ secrets.TOKEN }}
+          owner: test-branching
           base: main
           head: main
           auto_merge: false
