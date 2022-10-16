@@ -1,5 +1,1 @@
 Added changes for integration testing
-
-Added some other changes for example
-
-Added another one changes
